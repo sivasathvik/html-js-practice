@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+      body {
+         background-image: url('https://vitbangalore.in/wp-content/uploads/2023/06/64_995A8160_copy-scaled.jpg');
+         background-color: rgb(0,0,0);
+         color: red;
+      }
+      h1, h2, div {
+         text-align: center;
+      }
+   </style>
+   <title>VIT LOGIN PAGE</title>
+</head>
+<body>
+    <h1>VIT LOGIN PAGE</h1>
+    <h2>A place to learn, a chance to grow</h2>
+    <a href="register.html" target="_blank">New User? Click to register</a>
+    <center><img src="https://ww2.freelogovectors.net/wp-content/uploads/2023/01/vitlogo-freelogovectors.net_.png?lossy=1&ssl=1" alt="LOGO" width="150" height="150"></center>
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+        <br>
+        <br>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        <br>
+        <br>
+        <button type="button" onclick="validate()">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        <br>
+        <br>
+        <br>
+        <a href="https://www.vitaa.org/user/login.dz" target="_blank">Alumini portal</a>
+    </div>
+    </div>
+
+    <script type="text/javascript">
+        function validate() {
+            var username = document.getElementById("uname").value;
+            var password = document.getElementById("psw").value;
+
+            if (username === "sivasathvik" && password === "sathvik21") {
+                alert("Validation succeeded");
+                window.location.href = "https://chennai.vit.ac.in/";
+            } else {
+                alert("Validation failed");
+                window.location.href = "newpractice.html";
+            }
+        }
+    </script>
+</body>
+</html>
